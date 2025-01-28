@@ -14,11 +14,11 @@ public class employee{
         this.salary=salary;
     }
     public void printemployee(){
-        System.out.println("1st empplyee's name is "+name);
-        System.out.println("1st empplyee's age is "+age);
-        System.out.println("1st empplyee's eyecolor is "+eyecolor);
-        System.out.println("is 1st empplyee an engineer: "+engineer);
-        System.out.println("1st empplyee's salary is "+salary);
+        System.out.println("1st employee's name is "+name);
+        System.out.println("1st employee's age is "+age);
+        System.out.println("1st employee's eyecolor is "+eyecolor);
+        System.out.println("is 1st employee an engineer: "+engineer);
+        System.out.println("1st employee's salary is "+salary);
     }
     public void updatesalary(double newsalary){
         if (salary<newsalary){
@@ -35,7 +35,7 @@ public class employee{
     }
     public void checkwealth(){
         if (salary>3){
-            System.out.println("This employee's is reach as he/she makes: "+salary);
+            System.out.println("This employee is reach as he/she makes: "+salary);
 
         }
         else{
