@@ -9,7 +9,7 @@ public class Main {
         Human mother = new Human("Alice","Williams",1975);
         Human father = new Human("Bob","Williams",1975);
         Human son = new Human("Jack","Williams",2006,120, pet1, mother, father, new String[][]{{"Monday","Project 1"},{
-            "Tueaday","Project 2"},{"Wednesday","Play Minecraft"}});
+            "Tuesday","Project 2"},{"Wednesday","Play Minecraft"}});
         System.out.println(mother);
         System.out.println(father);
         System.out.println(son);
