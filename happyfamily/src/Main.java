@@ -1,5 +1,6 @@
 package happyfamily.src;
 import happyfamily.src.Pet;
+
 public class Main {
     public static void main(String[] args) {
         String[] habits = {"talk", "run", "sleep"};
@@ -14,6 +15,10 @@ public class Main {
         System.out.println(father);
         System.out.println(son);
         System.out.println(pet1);
+        son.greetpet();
+        son.describepet();
+        pet1.foul();
+        pet2.eat();
 
     }
 }

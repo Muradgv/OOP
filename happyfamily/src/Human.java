@@ -46,7 +46,7 @@ public class Human{
 
     public void describepet(){
         String isitsly = pet.tricklevel > 50 ? "sly" : "not sly";
-        System.out.printf("I have an %s who is %d years old, he is %s\n", pet.species, pet.age, isitsly);
+        System.out.printf("I have a %s who is %d years old, he is %s\n", pet.species, pet.age, isitsly);
 
     }
 
