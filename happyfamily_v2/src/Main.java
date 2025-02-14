@@ -15,7 +15,8 @@ public class Main {
         Family family1= new Family(mother,father);
         family1.addchild(jack);
         family1.addchild(daniel);
-
+        System.out.println(family1);
+        family1.deletechild(0);
         System.out.println(family1);
 
 

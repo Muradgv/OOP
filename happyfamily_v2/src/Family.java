@@ -33,6 +33,20 @@ public class Family {
         children=newchild;
     }
 
+    public boolean deletechild(int index){
+        Human[] newChildren = new Human[children.length - 1];
+        for (int i = 0, j = 0; i < children.length; i++) {
+            if (i != index) {
+                newChildren[j++] = children[i];
+            }
+        }
+        children = newChildren;
+        return true;
+    }
+
+    public int countFamily() {
+        return 2 + children.length;
+    }
 
     public String toString() {
         return String.format("Family{mother=%s, father=%s, children=%s, pet=%s}",
