@@ -1,7 +1,6 @@
 package happyfamily_v2.src;
-import happyfamily.src.Pet;
 import java.util.Arrays;
-import happyfamily_v2.src.Family;
+import java.util.Objects;
 
 public class Human {
     private String name;
@@ -45,6 +44,18 @@ public class Human {
         String isitsly = pet.tricklevel > 50 ? "sly" : "not sly";
         System.out.printf("I have a %s who is %d years old, he is %s\n", pet.species, pet.age, isitsly);
 
+    }
+
+    public void setFamily(Family family) {
+        this.family = family;
+    }
+
+    public boolean equals(Object temp) {
+        if (this == temp){
+            return true;
+        }
+        Human human = (Human) temp;
+        return year == human.year && Objects.equals(name, human.name) && Objects.equals(surname, human.surname);
     }
 
     public String toString() {

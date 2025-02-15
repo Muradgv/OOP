@@ -1,5 +1,4 @@
 package happyfamily_v2.src;
-import happyfamily.src.Pet;
 
 public class Main {
     public static void main(String[] args) {

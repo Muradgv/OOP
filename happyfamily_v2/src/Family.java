@@ -1,6 +1,5 @@
 package happyfamily_v2.src;
 import java.util.Arrays;
-import happyfamily_v2.src.Human;
 
 public class Family {
     private Human mother;
@@ -41,6 +40,7 @@ public class Family {
             }
         }
         children = newChildren;
+        children[index].setFamily(null);
         return true;
     }
 

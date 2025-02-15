@@ -1,6 +1,7 @@
 package happyfamily_v2.src;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Pet {
     public String species;
@@ -36,6 +37,15 @@ public class Pet {
     public void foul(){
         System.out.println("I need to cover it up");
     }
+
+    public boolean equals(Object temp) {
+        if (this == temp) {
+            return true;
+        }
+        Pet pet = (Pet) temp;
+        return age == pet.age && tricklevel == pet.tricklevel && Objects.equals(species, pet.species) && Objects.equals(nickname, pet.nickname);
+    }
+
 
     public String toString() {
         return species + "{nickname='" + nickname + "', age=" + age + ", trickLevel=" + tricklevel + ", habits=" + Arrays.toString(habits) + "}";
