@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         String[] habits = {"talk", "run", "sleep"};
         Pet pet1 = new Pet(Species.DOG, "toplan", 3, 100, habits);
-        Pet pet2 = new Pet(Species.CAT, "mestan");
+        Pet pet2 = new Pet(Species.CAT, "mestan",1,20,habits);
 
         Human mother = new Human("Alice","Williams",1975,100, new String[][]{{DayOfWeek.MONDAY.name(), "learn java"},
                 {DayOfWeek.TUESDAY.name(), "play minecraft"}});
@@ -19,10 +19,9 @@ public class Main {
         family1.addchild(child1);
         family1.addchild(child2);
         family1.countFamily();
+        family1.deletechild(3);
         System.out.println(family1);
-        family1.deletechild(1);
-        System.out.println(family1);
-        family1.countFamily();
+
     }
 }
 

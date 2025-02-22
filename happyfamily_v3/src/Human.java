@@ -100,4 +100,17 @@ public class Human {
                 iq, Arrays.deepToString(schedule)
         );
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        throw new UnsupportedOperationException("finalize method is not supported");
+        System.out.println("Human object is removed");
+    }
+
+    public static void main(String[] args) {
+        for (int i = 10_000; i < 10_000_000; i++) {
+            new Human("Unknown", "Unknown", 0);
+        }
+        System.gc();
+    }
 }

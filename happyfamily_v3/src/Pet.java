@@ -85,4 +85,10 @@ public class Pet {
         return species + "{nickname='" + nickname + "', age=" + age + ", trickLevel=" + tricklevel + ", habits=" + Arrays.toString(habits) + "}";
     }
 
+    @Override
+    protected void finalize() throws Throwable {
+        throw new UnsupportedOperationException("finalize method is not supported");
+        System.out.println("Pet object is removed");
+    }
+
 }

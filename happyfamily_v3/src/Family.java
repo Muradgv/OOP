@@ -46,6 +46,10 @@ public class Family {
     }
 
     public boolean deletechild(int index){
+        if (index<0 || index>= children.length){
+            System.out.println("Out of the range");
+            return false;
+        }
         Human[] newChildren = new Human[children.length - 1];
         children[index].setFamily(null);
         for (int i = 0, j = 0; i < children.length; i++) {
@@ -57,6 +61,21 @@ public class Family {
         return true;
     }
 
+    public boolean deletechild(Human child){
+        if (child == null){
+            return false;
+        }
+
+        else{
+            for (int i=0;i<children.length;i++){
+                if(child.equals(children[i])){
+                    return deletechild(i);
+                }
+            }
+        }
+        return false;
+    }
+
     public int countFamily() {System.out.println(children.length+2);
         return 0;
     }
@@ -65,6 +84,12 @@ public class Family {
     public String toString() {
         return String.format("Family{mother=%s, father=%s, children=%s, pet=%s}",
                 mother, father, Arrays.toString(children), pet);
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        throw new UnsupportedOperationException("finalize method is not supported");
+        System.out.println("Family object is removed");
     }
 
 }
