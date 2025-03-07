@@ -11,7 +11,7 @@ public abstract class Pet {
     private String[] habits;
 
     //constructors
-    public Pet(Species species, String nickname, int age, int tricklevel, String[] habits){
+    public Pet(String nickname, int age, int tricklevel, String[] habits){
         this.nickname=nickname;
         this.age=age;
         this.tricklevel=tricklevel;
@@ -56,10 +56,6 @@ public abstract class Pet {
     }
 
     public abstract void respond();
-
-    public void foul(){
-        System.out.println("I need to cover it up");
-    }
 
     public boolean equals(Object temp) {
         if (this == temp) {

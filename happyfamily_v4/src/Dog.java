@@ -1,8 +1,8 @@
 package happyfamily_v4.src;
 
 public class Dog extends Pet implements Foulable{
-    public Dog(Species species, String nickname,int age, int tricklevel, String[] habits){
-        super(species,nickname,age,tricklevel,habits);
+    public Dog(String nickname,int age, int tricklevel, String[] habits){
+        super(nickname,age,tricklevel,habits);
         setSpecies(Species.DOG);
     }
     @Override

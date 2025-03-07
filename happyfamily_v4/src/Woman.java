@@ -9,12 +9,12 @@ public class Woman extends Human{
         if (getFamily()!=null && getFamily().getPet()!=null)
             System.out.println("Hi my sweetheart "+getFamily().getPet().getNickname());
         else
-            System.out.println("Where is my pet");
+            System.out.println("My pet is lost");
 
     }
 
     public void makeup(){
-        System.out.println("this looks great on me");
+        System.out.println("This looks great on me");
     }
 
 }

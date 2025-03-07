@@ -43,6 +43,7 @@ public class Family {
         Human[] newchild=Arrays.copyOf(children, children.length + 1);
         newchild[children.length]=child;
         children=newchild;
+        child.setFamily(this);
     }
 
     public boolean deletechild(int index){

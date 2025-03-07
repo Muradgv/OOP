@@ -1,8 +1,8 @@
 package happyfamily_v4.src;
 
 public class RoboCat extends Pet{
-    public RoboCat(Species species, String nickname,int age, int tricklevel, String[] habits){
-        super(species,nickname,age,tricklevel,habits);
+    public RoboCat(String nickname,int age, int tricklevel, String[] habits){
+        super(nickname,age,tricklevel,habits);
         setSpecies(Species.ROBOCAT);
     }
     @Override
