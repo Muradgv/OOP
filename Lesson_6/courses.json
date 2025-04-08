@@ -1,0 +1,27 @@
+[ {
+  "name" : "Math",
+  "teacher" : null,
+  "exams" : [ {
+    "student" : {
+      "name" : "Huseyn",
+      "surname" : "Huseynov",
+      "age" : 22,
+      "id" : 3,
+      "phoneNumber" : "0551234569"
+    },
+    "course" : "Math"
+  } ]
+}, {
+  "name" : "Physics",
+  "teacher" : null,
+  "exams" : [ {
+    "student" : {
+      "name" : "Mehdi",
+      "surname" : "Mehmedov",
+      "age" : 23,
+      "id" : 4,
+      "phoneNumber" : "0551234570"
+    },
+    "course" : "Physics"
+  } ]
+} ]

@@ -1,0 +1,13 @@
+[ {
+  "name" : "Ali",
+  "surname" : "Aliyev",
+  "age" : 30,
+  "id" : 1,
+  "phoneNumber" : "0551239597"
+}, {
+  "name" : "Veli",
+  "surname" : "Veliev",
+  "age" : 31,
+  "id" : 2,
+  "phoneNumber" : "0551265478"
+} ]

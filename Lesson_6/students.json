@@ -1,0 +1,31 @@
+[ {
+  "name" : "Ali",
+  "surname" : "Aliyev",
+  "age" : 20,
+  "id" : 1,
+  "phoneNumber" : "0551234567"
+}, {
+  "name" : "Veli",
+  "surname" : "Veliev",
+  "age" : 21,
+  "id" : 2,
+  "phoneNumber" : "0551234568"
+}, {
+  "name" : "Huseyn",
+  "surname" : "Huseynov",
+  "age" : 22,
+  "id" : 3,
+  "phoneNumber" : "0551234569"
+}, {
+  "name" : "Mehdi",
+  "surname" : "Mehmedov",
+  "age" : 23,
+  "id" : 4,
+  "phoneNumber" : "0551234570"
+}, {
+  "name" : "Ayse",
+  "surname" : "Aydin",
+  "age" : 24,
+  "id" : 5,
+  "phoneNumber" : "0551234571"
+} ]
